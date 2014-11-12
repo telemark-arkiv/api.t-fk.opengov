@@ -48,7 +48,7 @@ function getAgenda(req, reply){
         item = {};
         item.casenumber = elem.children[1].children[0].data.trim();
         item.title = elem.children[3].children[1].children[0].data;
-        item.id = elem.children[3].children[1].attribs.href.split('/').pop();
+        item.id = elem.children[3].children[1].attribs.href ? elem.children[3].children[1].attribs.href.split('/').pop() : '';
         agendaList.push(item);
       });
 
