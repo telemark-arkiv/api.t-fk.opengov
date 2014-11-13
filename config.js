@@ -2,7 +2,7 @@
 
 var config = {
       "SERVER_PORT" : 3000,
-      "BASE" : "http://opengov.cloudapp.net",
+      "HOST" : "http://opengov.cloudapp.net",
       "PATH" : "/Meetings/tfk"
     }
   ;

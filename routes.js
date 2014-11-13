@@ -5,27 +5,27 @@ var handlers = require('./handlers')
     {
       method: 'GET',
       path: '/',
-      handler: handlers.getBase
+      handler: handlers.indexHandler
     },
     {
       method: 'GET',
       path: '/boards',
-      handler: handlers.getBoards
+      handler: handlers.boardsHandler
     },
     {
       method: 'GET',
-      path: '/board/{boardId}',
-      handler: handlers.getMeetings
+      path: '/meetings/{boardId}',
+      handler: handlers.meetingsHandler
     },
     {
       method: 'GET',
-      path: '/agenda/{agendaId}',
-      handler: handlers.getAgenda
+      path: '/meeting/{meetingId}',
+      handler: handlers.meetingHandler
     },
     {
       method: 'GET',
-      path: '/details/{caseId}',
-      handler: handlers.getDetails
+      path: '/details/{agendaId}',
+      handler: handlers.detailsHandler
     }
   ]
   ;
