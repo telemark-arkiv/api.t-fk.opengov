@@ -1,6 +1,6 @@
 #api.t-fk.opengov
 
-API for the opengov.cloudapp.net solution from Software Innovation.
+API-service for the opengov.cloudapp.net solution from [Software Innovation](http://www.software-innovation.com/) based on [opengov-meetings](https://www.npmjs.org/package/opengov-meetings).
 
 This is developed for http://opengov.cloudapp.net/Meetings/tfk/ but by changing PATH in config.js it will probably work for all installations.
 
@@ -19,17 +19,3 @@ Start the server
 ```
 $ npm start
 ```
-
-##Disclaimer
-
-This is not an official API form Software Innovation.
-
-It will probably break the second they update their solution.
-
-Until then, this is good enough ;-)
-
-##Todo
-
-Documentation with jsdoc
-
-Tests
