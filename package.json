@@ -20,17 +20,6 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "start":"node index.js",
-    "test": "mocha --reporter spec test/*.js"
-  },
-  "dependencies": {
-    "cheerio": "^0.18.0",
-    "hapi": "^7.5.2",
-    "request": "^2.47.0"
-  },
-  "devDependencies": {
-    "jsdoc": "^3.3.0-alpha10",
-    "mocha": "^2.0.1",
-    "supertest": "^0.15.0"
+    "start":"node index.js"
   }
 }
