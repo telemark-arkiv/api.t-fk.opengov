@@ -2,6 +2,10 @@
 
 var ogm = require('opengov-meetings')
   , config = require('./config')
+  , opts = {
+      host: config.HOST,
+      path: config.PATH
+    }
   ;
 
 function getData(func, opts, reply){
@@ -27,48 +31,22 @@ function indexHandler(req, reply){
 }
 
 function boardsHandler(req, reply){
-  var opts = {
-      host: config.HOST,
-      path: config.PATH
-    }
-    ;
   getData(ogm.getBoards, opts, reply);
 }
 
 function meetingsHandler(req, reply){
-  var opts = {
-        host: config.HOST,
-        path: config.PATH,
-        boardId: req.params.boardId
-      }
-    ;
-
+  opts.boardId = req.params.boardId;
   getData(ogm.getMeetings, opts, reply);
-
 }
 
 function meetingHandler(req, reply){
-  var opts = {
-        host: config.HOST,
-        path: config.PATH,
-        meetingId: req.params.meetingId
-      }
-    ;
-
+  opts.meetingId = req.params.meetingId;
   getData(ogm.getAgenda, opts, reply);
-
 }
 
 function detailsHandler(req, reply){
-  var opts = {
-        host: config.HOST,
-        path: config.PATH,
-        agendaId: req.params.agendaId
-      }
-    ;
-
+  opts.agendaId = req.params.agendaId;
   getData(ogm.getDetails, opts, reply);
-
 }
 
 module.exports.indexHandler = indexHandler;
