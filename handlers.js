@@ -49,12 +49,11 @@ function detailsHandler(req, reply){
   getData(ogm.getDetails, opts, reply);
 }
 
-module.exports.indexHandler = indexHandler;
 
-module.exports.boardsHandler = boardsHandler;
-
-module.exports.meetingsHandler = meetingsHandler;
-
-module.exports.meetingHandler = meetingHandler;
-
-module.exports.detailsHandler = detailsHandler;
+module.exports = {
+  indexHandler: indexHandler,
+  boardsHandler: boardsHandler,
+  meetingsHandler: meetingsHandler,
+  meetingHandler: meetingHandler,
+  detailsHandler: detailsHandler
+}
