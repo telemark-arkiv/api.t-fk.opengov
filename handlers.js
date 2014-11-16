@@ -56,4 +56,4 @@ module.exports = {
   meetingsHandler: meetingsHandler,
   meetingHandler: meetingHandler,
   detailsHandler: detailsHandler
-}
+};
