@@ -1,5 +1,7 @@
 #api.t-fk.opengov
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/telemark/api.t-fk.opengov.svg)](https://greenkeeper.io/)
+
 API-service for the opengov.cloudapp.net solution from [Software Innovation](http://www.software-innovation.com/) based on [opengov-meetings](https://www.npmjs.org/package/opengov-meetings).
 
 This is developed for http://opengov.cloudapp.net/Meetings/tfk/ but by changing PATH in config.js it will probably work for all installations.
