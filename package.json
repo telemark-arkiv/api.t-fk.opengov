@@ -23,7 +23,7 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "hapi": "^7.5.2",
-    "opengov-meetings": "^1.0.0"
+    "hapi": "^16.1.0",
+    "opengov-meetings": "^3.1.6"
   }
 }
